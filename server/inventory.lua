@@ -1,6 +1,6 @@
-if Config.Inventory == 'ESX' or 'OX' then
+if Config.Framework == 'ESX' then
     ESX = exports["es_extended"]:getSharedObject()
-elseif Config.Inventory == 'QB' then
+elseif Config.Framework == 'QB' then
     QBCore = exports['qb-core']:GetCoreObject({'Functions'})
 end
 
@@ -36,9 +36,9 @@ end
 
 function RegisterUsableItem(item, callback)
     exports['wix_core']:Debug('ALL', 'Registering usable item: ' .. item)
-    if Config.Inventory == 'ESX' or 'OX' then
+    if Config.Framework == 'ESX' then
         ESX.RegisterUsableItem(item, callback)
-    elseif Config.Inventory == 'QB' then
+    elseif Config.Framework == 'QB' then
         QBCore.Functions.CreateUseableItem(item, callback)
     else
         exports['wix_core']:Debug('ERROR', 'Inventory system not configured correctly.')
