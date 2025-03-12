@@ -1,6 +1,8 @@
 # WIX CORE
 *Core script made for my resources.*
 
+[![discord](https://img.shields.io/badge/discord-000?style=for-the-badge&logo=discord&logoColor=blue)](https://discord.gg/FNe5q8b394)
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
