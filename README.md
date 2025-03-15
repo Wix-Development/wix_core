@@ -5,6 +5,10 @@
 
 ## Table of Contents
 - [Installation](#installation)
+- [Supported scripts](#supported-scripts)
+  - [Frameworks](#frameworks)
+  - [Inventory Systems](#inventory-systems)
+  - [Notification Systems](#notification-systems)
 - [Usage](#usage)
   - [Client](#client)
   - [Shared](#shared)
@@ -12,10 +16,32 @@
 - [License](#license)
 
 ## Installation
-To install the WIX CORE script, follow these steps:
-1. Download the latest release from the [releases page](https://github.com/your-repo/wix_core/releases).
+To install WIX CORE, follow these steps:
+1. Download the latest release from the [releases page](https://github.com/MaratWC/wix_core/releases).
 2. Extract the downloaded files into your resources folder.
 3. Add `ensure wix_core` to your `server.cfg` file.
+
+## Supported Scripts
+
+The `wix_core` script is designed to support multiple frameworks, inventory systems, and notification methods. Below is a list of supported options:
+
+### Frameworks
+- **[ESX](https://github.com/esx-framework/esx_core)**
+- **[QBCore](https://github.com/qbcore-framework/qb-core)**
+- **Auto Detection** (Automatically detects the installed framework)
+
+### Inventory Systems
+- **[ESX Inventory](https://github.com/esx-framework)**
+- **[OX Inventory](https://github.com/overextended/ox_inventory)**
+- **[QB Inventory](https://github.com/qbcore-framework/qb-inventory)**
+- **Auto Detection** (Automatically detects the installed inventory system)
+
+### Notification Systems
+- **[ESX Notification](https://github.com/esx-framework)**
+- **[OX Notification](https://github.com/overextended/ox_lib)**
+- **[QB Notification](https://github.com/qbcore-framework)**
+- **Chat Notification** (Uses the default FiveM chat)
+- **Auto Detection** (Automatically detects the installed notification system)
 
 ## Usage
 
