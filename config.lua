@@ -9,10 +9,16 @@
 Config = {}
 
 Config.UpdateChecker = true
-Config.Debug = 'ALL' -- ALL / ERROR
+
+Config.Debug = {
+    ['ERROR'] = true,
+    ['INFO'] = true,
+    ['EXPORTS'] = false,
+    ['RESOURCES'] = false
+}
 
 Config.Framework = 'auto' -- ESX / QB / auto
 
 Config.Inventory = 'auto' -- ESX / OX / QB / auto
 
-Config.Notify = 'auto' -- ESX / OX / QB / auto
+Config.Notify = 'auto' -- ESX / OX / QB / CHAT / auto

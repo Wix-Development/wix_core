@@ -8,16 +8,19 @@
 --                                                            |_|                             
 author 'Wix Development'
 description 'Wix Core'
-version '1.0.0'
+version '1.1.0'
 fx_version('cerulean')
 game('gta5')
 lua54 'on'
 
 shared_script 'config.lua'
+shared_script 'shared/debug.lua'
+shared_script 'shared/auto-detection.lua'
+
+shared_script 'config.lua'
 escrow_ignore 'config.lua'
 client_script 'client/*.lua'
 server_script 'server/*.lua'
-shared_script 'shared/*.lua'
 shared_script '@ox_lib/init.lua' -- Can be removed if not using ox_lib notifications
 
 exports {
