@@ -29,5 +29,6 @@ exports {
     'Debug',
     'AddItem',
     'RemoveItem',
-    'RegisterUsableItem'
+    'RegisterUsableItem',
+    'Ban'
 }

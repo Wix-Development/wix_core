@@ -9,6 +9,7 @@
   - [Frameworks](#frameworks)
   - [Inventory Systems](#inventory-systems)
   - [Notification Systems](#notification-systems)
+  - [Anticheats](#anticheats)
 - [Usage](#usage)
   - [Client](#client)
   - [Shared](#shared)
@@ -23,7 +24,7 @@ To install WIX CORE, follow these steps:
 
 ## Supported Scripts
 
-The `wix_core` script is designed to support multiple frameworks, inventory systems, and notification methods. Below is a list of supported options:
+The `wix_core` script is designed to support multiple frameworks, inventory systems, notification methods, and anticheats. If you miss any scripts feel free to make a pull request or message me on discord to add them. Below is a list of supported options:
 
 ### Frameworks
 - **[ESX](https://github.com/esx-framework/esx_core)**
@@ -42,6 +43,10 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 - **[QB Notification](https://github.com/qbcore-framework)**
 - **Chat Notification** (Uses the default FiveM chat)
 - **Auto Detection** (Automatically detects the installed notification system)
+
+### Anicheats
+- **[WX Anticheat](https://anticheat.wx0.dev)**
+- **[Fiveguard](https://fiveguard.net)**
 
 ## Usage
 
@@ -64,6 +69,7 @@ exports['wix_core']:UpdateChecker(GetResourceMetadata(GetCurrentResourceName(), 
 exports['wix_core']:AddItem(playerId, item, count)
 exports['wix_core']:RemoveItem(playerId, item, count)
 exports['wix_core']:RegisterUsableItem(item, callback)
+exports['wix_core']:Ban(playerId, reason)
 ```
 
 ## License

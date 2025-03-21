@@ -39,3 +39,9 @@ Config.Inventory = 'auto' -- ESX / OX / QB / auto
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
 Config.Notify = 'auto' -- ESX / OX / QB / CHAT / auto
+
+---------------- ANTICHEAT ----------------
+-- 'WX' - https://anticheat.wx0.dev
+-- 'FIVEGUARD' - https://fiveguard.net
+Config.Anticheat = 'WX'
+Config.AnticheatResourceName = '' -- The name of the anticheat resource
