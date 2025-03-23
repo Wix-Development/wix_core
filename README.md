@@ -20,7 +20,7 @@
 To install WIX CORE, follow these steps:
 1. Download the latest release from the [releases page](https://github.com/MaratWC/wix_core/releases).
 2. Extract the downloaded files into your resources folder.
-3. Make sure the resource is called `wix_core`
+3. Make sure the resource is called `wix_core`.
 4. Add `ensure wix_core` to your `server.cfg` file.
 
 ## Supported Scripts
