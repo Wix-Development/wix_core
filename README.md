@@ -60,7 +60,7 @@ exports['wix_core']:Notify('Test Title', 'This is a test message', 'success')
 ### Shared
 
 ```lua
-exports['wix_core']:Debug('ALL/ERROR', 'Problem found.')
+exports['wix_core']:Debug('ERROR/INFO/EXPORTS/RESOURCES', 'Problem found.')
 ```
 
 ### Server
