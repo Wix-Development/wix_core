@@ -1,6 +1,6 @@
-if Inventory == 'ESX' then
+if Framework == 'ESX' then
     ESX = exports["es_extended"]:getSharedObject()
-elseif Inventory == 'QB' then
+elseif Framework == 'QB' then
     QBCore = exports['qb-core']:GetCoreObject({'Functions'})
 end
 
