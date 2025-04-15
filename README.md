@@ -70,8 +70,9 @@ exports['wix_core']:Debug('ERROR/INFO/EXPORTS/RESOURCES', 'Problem found.')
 
 ```lua
 exports['wix_core']:UpdateChecker(GetResourceMetadata(GetCurrentResourceName(), 'version', 0))
-exports['wix_core']:AddItem(playerId, item, count)
-exports['wix_core']:RemoveItem(playerId, item, count)
+exports['wix_core']:AddItem(playerId, item, amount)
+exports['wix_core']:RemoveItem(playerId, item, amount)
+exports['wix_core']:CanCarryItem(playerId, item, amount)
 exports['wix_core']:RegisterUsableItem(item, callback)
 exports['wix_core']:Ban(playerId, reason)
 ```

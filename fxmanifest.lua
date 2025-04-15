@@ -30,5 +30,6 @@ exports {
     'AddItem',
     'RemoveItem',
     'RegisterUsableItem',
+    'CanCarryItem',
     'Ban'
 }
