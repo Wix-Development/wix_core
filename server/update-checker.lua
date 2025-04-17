@@ -25,7 +25,7 @@ function UpdateChecker(version)
                     return true
                 end
             else
-                print("^1[UPDATE CHECKER]^7 Failed to check for updates. HTTP Status Code: " .. statusCode)
+                print("^1[UPDATE CHECKER]^7 Failed to check for updates for resource ".. resource..". HTTP Status Code: " .. statusCode)
                 return nil
             end
         end, "GET", "", {["Content-Type"] = "application/json"})
