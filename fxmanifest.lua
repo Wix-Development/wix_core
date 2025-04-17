@@ -8,7 +8,7 @@
 --                                                            |_|                             
 author 'Wix Development'
 description 'Wix Core'
-version '1.3.0'
+version '1.4.0'
 fx_version('cerulean')
 game('gta5')
 lua54 'on'
@@ -31,5 +31,9 @@ exports {
     'RemoveItem',
     'RegisterUsableItem',
     'CanCarryItem',
-    'Ban'
+    'Ban',
+    'AddMoney',
+    'RemoveMoney',
+    'GetMoney',
+    'SetMoney'
 }

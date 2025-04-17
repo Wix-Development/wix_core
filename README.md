@@ -75,6 +75,10 @@ exports['wix_core']:RemoveItem(playerId, item, amount)
 exports['wix_core']:CanCarryItem(playerId, item, amount)
 exports['wix_core']:RegisterUsableItem(item, callback)
 exports['wix_core']:Ban(playerId, reason)
+exports['wix_core']:AddMoney(playerId, account, amount)
+exports['wix_core']:RemoveMoney(playerId, account, amount)
+exports['wix_core']:GetMoney(playerId, account)
+exports['wix_core']:SetMoney(playerId, account, amount)
 ```
 
 ## License
