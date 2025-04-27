@@ -1,7 +1,7 @@
 function UpdateChecker(version)
     if Config.UpdateChecker == true then
         local resource = GetInvokingResource()
-        local versionCheckUrl = "https://raw.githubusercontent.com/MaratWC/update-checker/main/" .. resource .. ".json"
+        local versionCheckUrl = "https://raw.githubusercontent.com/MaratWC/wix_core/main/update-checker/" .. resource .. ".json"
         
         PerformHttpRequest(versionCheckUrl, function(statusCode, responseText, headers)
             if statusCode == 200 then
