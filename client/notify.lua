@@ -10,6 +10,12 @@ function Notify(title, message, type)
             description = message,
             type = type
         })
+    elseif Notifications == 'TGIANN-LUMIHUD' then
+        if type == 'info' then
+            exports["tgiann-lumihud"]:Notif(message, "primary", 3000)
+        else 
+            exports["tgiann-lumihud"]:Notif(message, type, 3000)
+        end
     elseif Notifications == 'CHAT' then
         if type == 'error' then
             TriggerEvent('chat:addMessage', {

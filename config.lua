@@ -36,6 +36,7 @@ Config.Inventory = 'auto' -- ESX / OX / QB / auto
 -- 'ESX' - https://github.com/esx-framework
 -- 'OX' - https://github.com/overextended/ox_lib
 -- 'QB' - https://github.com/qbcore-framework
+-- 'TGIANN-LUMIHUD' - https://tgiann.tebex.io/package/6369632
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
 Config.Notify = 'auto' -- ESX / OX / QB / CHAT / auto
@@ -43,5 +44,5 @@ Config.Notify = 'auto' -- ESX / OX / QB / CHAT / auto
 ---------------- ANTICHEAT ----------------
 -- 'WX' - https://anticheat.wx0.dev
 -- 'FIVEGUARD' - https://fiveguard.net
-Config.Anticheat = 'WX'
+Config.Anticheat = ''
 Config.AnticheatResourceName = '' -- The name of the anticheat resource

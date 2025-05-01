@@ -41,6 +41,9 @@ if Config.Notify == 'auto' then
     if GetResourceState('ox_lib') == 'started' then
         Notifications = 'OX'
         exports['wix_core']:Debug('INFO', 'Auto-detected OX notifications')
+    elseif GetResourceState('tgiann-lumihud') == 'started' then
+        Notifications = 'TGIANN-LUMIHUD'
+        exports['wix_core']:Debug('INFO', 'Auto-detected QB notifications')
     elseif GetResourceState('es_extended') == 'started' then
         Notifications = 'ESX'
         exports['wix_core']:Debug('INFO', 'Auto-detected ESX notifications')
