@@ -1,4 +1,4 @@
 {
-  "version": "1.0.1",
-  "message": "Fixed the native 000000002f7a49e6 error and fixed the issue causing players to get the reward after suicide."
+  "version": "1.1.1",
+  "message": "Added a database integration that stores the players' kills and deaths & added GetKD, GetPlayerKills, GetPlayerDeaths exports"
 }
