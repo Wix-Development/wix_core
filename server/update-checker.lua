@@ -1,7 +1,7 @@
 function UpdateChecker(version)
     if Config.UpdateChecker == true then
         local resource = GetInvokingResource()
-        local versionCheckUrl = "https://raw.githubusercontent.com/MaratWC/wix_core/main/update-checker/" .. resource .. ".json"
+        local versionCheckUrl = "https://raw.githubusercontent.com/Wix-Development/wix_core/main/update-checker/" .. resource .. ".json"
         
         PerformHttpRequest(versionCheckUrl, function(statusCode, responseText, headers)
             if statusCode == 200 then
@@ -15,7 +15,7 @@ function UpdateChecker(version)
                     print("^3[UPDATE CHECKER]^7 Latest version: " .. latestVersion)
                     print("^3[UPDATE CHECKER]^7 Update message: " .. updateMessage)
                     if resource == GetCurrentResourceName() then
-                        print("^3[UPDATE CHECKER]^7 Get the latest update here: https://github.com/MaratWC/wix_core")
+                        print("^3[UPDATE CHECKER]^7 Get the latest update here: https://github.com/Wix-Development/wix_core")
                     else
                         print("^3[UPDATE CHECKER]^7 Get the latest update here: https://portal.cfx.re/")
                     end
