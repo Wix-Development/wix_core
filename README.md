@@ -1,7 +1,7 @@
 # WIX CORE
 ![banner_small](https://github.com/user-attachments/assets/b7ac06ab-aee0-41ea-b7c0-d0b3c2cc18b2)
 
-*Core script made for my resources.*
+*Core script made for our resources.*
 [![discord](https://img.shields.io/badge/discord-000?Plastic&logo=discord&logoColor=blue)](https://discord.gg/FNe5q8b394) 
 
 ![GitBook](https://img.shields.io/badge/GitBook-%23000000.svg?Plastic&logo=gitbook&logoColor=white)
