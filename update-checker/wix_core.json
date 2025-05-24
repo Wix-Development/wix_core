@@ -1,4 +1,4 @@
 {
-  "version": "1.4.0",
-  "message": "Added money management exports, small change to the update system."
+  "version": "1.5.0",
+  "message": "Added Tgiann Lumi Hud notify support & changes to the update checker"
 }
