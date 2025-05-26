@@ -20,7 +20,7 @@
 - [License](#license)
 
 ## Installation
-To install WIX CORE, follow these steps:
+To install Wix Core, follow these steps:
 1. Download the latest release from the [releases page](https://github.com/MaratWC/wix_core/releases).
 2. Extract the downloaded files into your resources folder.
 3. Make sure the resource is called `wix_core`.
