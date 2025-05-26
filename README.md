@@ -1,4 +1,4 @@
-# WIX CORE
+# Wix Core
 ![banner_small](https://github.com/user-attachments/assets/b7ac06ab-aee0-41ea-b7c0-d0b3c2cc18b2)
 
 *Core script made for our resources.*
