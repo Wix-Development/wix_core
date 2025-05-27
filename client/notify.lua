@@ -1,4 +1,8 @@
 function Notify(title, message, type)
+    if not type or type == '' or type == nil then
+        type = 'info'
+        exports['wix_core']:Debug('EXPORTS', "No type specified, defaulting to 'info'.")
+    end
     exports['wix_core']:Debug('EXPORTS', 'Sending notification - Title: '..title..' Message: '..message..' Type: '..type)
     if Notifications == 'ESX' then
         ESX.ShowNotification(message)
