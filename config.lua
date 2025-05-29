@@ -29,6 +29,7 @@ Config.Framework = 'auto' -- ESX / QB / auto
 ---------------- INVENTORY ----------------
 -- 'ESX' - https://github.com/esx-framework
 -- 'OX' - https://github.com/overextended/ox_inventory
+-- 'OX' - https://github.com/communityox/ox_inventory
 -- 'QB' - https://github.com/qbcore-framework/qb-inventory
 -- 'auto' - Automatically detects the installed inventory system
 Config.Inventory = 'auto' -- ESX / OX / QB / auto
@@ -36,6 +37,7 @@ Config.Inventory = 'auto' -- ESX / OX / QB / auto
 ---------------- NOTIFY ----------------
 -- 'ESX' - https://github.com/esx-framework
 -- 'OX' - https://github.com/overextended/ox_lib
+-- 'OX' - https://github.com/communityox/ox_lib
 -- 'QB' - https://github.com/qbcore-framework
 -- 'TGIANN-LUMIHUD' - https://tgiann.tebex.io/package/6369632
 -- 'CHAT' - Uses the default FiveM chat
