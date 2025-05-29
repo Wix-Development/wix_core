@@ -46,6 +46,8 @@ function Notify(title, message, type)
                 args = {title, message}
               })
         end
+    elseif Notifications == 'QBX' then
+        exports.qbx_core:Notify(message, type)
     else
         exports['wix_core']:Debug('ERROR', 'Notification system not configured correctly.')
     end

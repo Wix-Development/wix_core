@@ -34,12 +34,14 @@ function RemoveItem(playerId, item, amount)
     end
 end
 
-function RegisterUsableItem(item, callback)
+function RegisterUseableItem(item, callback)
     exports['wix_core']:Debug('EXPORTS', 'Registering usable item: ' .. item)
     if Framework == 'ESX' then
         ESX.RegisterUsableItem(item, callback)
     elseif Framework == 'QB' then
         QBCore.Functions.CreateUseableItem(item, callback)
+    elseif Framework == 'QBX' then
+        exports.qbx_core:CreateUseableItem(item, callback)
     else
         exports['wix_core']:Debug('ERROR', 'Inventory system not configured correctly.')
     end
@@ -61,5 +63,5 @@ end
 
 exports('AddItem', AddItem)
 exports('RemoveItem', RemoveItem)
-exports('RegisterUsableItem', RegisterUsableItem)
+exports('RegisterUseableItem', RegisterUsableItem)
 exports('CanCarryItem', CanCarryItem)

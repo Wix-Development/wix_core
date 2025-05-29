@@ -1,4 +1,4 @@
-# Wix Core
+# WIX CORE
 ![banner_small](https://github.com/user-attachments/assets/b7ac06ab-aee0-41ea-b7c0-d0b3c2cc18b2)
 
 *Core script made for our resources.*
@@ -20,7 +20,7 @@
 - [License](#license)
 
 ## Installation
-To install Wix Core, follow these steps:
+To install WIX CORE, follow these steps:
 1. Download the latest release from the [releases page](https://github.com/MaratWC/wix_core/releases).
 2. Extract the downloaded files into your resources folder.
 3. Make sure the resource is called `wix_core`.
@@ -74,7 +74,7 @@ exports['wix_core']:UpdateChecker(GetResourceMetadata(GetCurrentResourceName(), 
 exports['wix_core']:AddItem(playerId, item, amount)
 exports['wix_core']:RemoveItem(playerId, item, amount)
 exports['wix_core']:CanCarryItem(playerId, item, amount)
-exports['wix_core']:RegisterUsableItem(item, callback)
+exports['wix_core']:RegisterUesableItem(item, callback)
 exports['wix_core']:Ban(playerId, reason)
 exports['wix_core']:AddMoney(playerId, account, amount)
 exports['wix_core']:RemoveMoney(playerId, account, amount)

@@ -12,6 +12,8 @@ function AddMoney(playerId, account, amount)
     elseif Framework == 'QB' then
         local Player = QBCore.Functions.GetPlayer(playerId)
         Player.Functions.AddMoney(account, amount)
+    elseif Framework == 'QBX' then
+        exports.qbx_core:AddMoney(playerId, account, amount, 'wix_core')
     else
         exports['wix_core']:Debug('ERROR', 'Framework not configured correctly.')
     end
@@ -25,6 +27,8 @@ function RemoveMoney(playerId, account, amount)
     elseif Framework == 'QB' then
         local Player = QBCore.Functions.GetPlayer(playerId)
         Player.Functions.RemoveMoney(account, amount)
+    elseif Framework == 'QBX' then
+        exports.qbx_core:RemoveMoney(playerId, account, amount, 'wix_core')
     else
         exports['wix_core']:Debug('ERROR', 'Framework not configured correctly.')
     end
@@ -38,6 +42,8 @@ function GetMoney(playerId, account)
     elseif Framework == 'QB' then
         local Player = QBCore.Functions.GetPlayer(playerId)
         return Player.PlayerData.money[account]
+    elseif Framework == 'QBX' then
+        return exports.qbx_core:GetMoney(playerId, account)
     else
         exports['wix_core']:Debug('ERROR', 'Framework not configured correctly.')
     end
@@ -51,6 +57,8 @@ function SetMoney(playerId, account, amount)
     elseif Framework == 'QB' then
         local Player = QBCore.Functions.GetPlayer(playerId)
         Player.Functions.SetMoney(account, amount)
+    elseif Framework == 'QBX' then
+        exports.qbx_core:SetMoney(playerId, account, amount, 'wix_core')
     else
         exports['wix_core']:Debug('ERROR', 'Framework not configured correctly.')
     end

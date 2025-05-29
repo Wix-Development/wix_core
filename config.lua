@@ -22,27 +22,27 @@ Config.Debug = {
 
 ---------------- FRAMEWORK ----------------
 -- 'ESX' - https://github.com/esx-framework/esx_core
+-- 'QBX' - https://github.com/Qbox-Project/qbx_core
 -- 'QB' - https://github.com/qbcore-framework/qb-core
 -- 'auto' - Automatically detects the installed framework
-Config.Framework = 'auto' -- ESX / QB / auto
+Config.Framework = 'auto'
 
 ---------------- INVENTORY ----------------
 -- 'ESX' - https://github.com/esx-framework
--- 'OX' - https://github.com/overextended/ox_inventory
 -- 'OX' - https://github.com/communityox/ox_inventory
 -- 'QB' - https://github.com/qbcore-framework/qb-inventory
 -- 'auto' - Automatically detects the installed inventory system
-Config.Inventory = 'auto' -- ESX / OX / QB / auto
+Config.Inventory = 'auto'
 
 ---------------- NOTIFY ----------------
 -- 'ESX' - https://github.com/esx-framework
--- 'OX' - https://github.com/overextended/ox_lib
 -- 'OX' - https://github.com/communityox/ox_lib
+-- 'QBX' - https://github.com/Qbox-Project/qbx_core
 -- 'QB' - https://github.com/qbcore-framework
 -- 'TGIANN-LUMIHUD' - https://tgiann.tebex.io/package/6369632
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
-Config.Notify = 'auto' -- ESX / OX / QB / CHAT / auto
+Config.Notify = 'auto'
 
 ---------------- ANTICHEAT ----------------
 -- 'WX' - https://anticheat.wx0.dev

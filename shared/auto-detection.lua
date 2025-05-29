@@ -6,6 +6,9 @@ if Config.Framework == 'auto' then
     if GetResourceState('es_extended') == 'started' then
         Framework = 'ESX'
         exports['wix_core']:Debug('INFO', 'Auto-detected ESX framework')
+    elseif GetResourceState('qbx_core') == 'started' then
+        Framework = 'QBX'
+        exports['wix_core']:Debug('INFO', 'Auto-detected QBX framework')
     elseif GetResourceState('qb-core') == 'started' then
         Framework = 'QB'
         exports['wix_core']:Debug('INFO', 'Auto-detected QB framework')
@@ -47,6 +50,9 @@ if Config.Notify == 'auto' then
     elseif GetResourceState('es_extended') == 'started' then
         Notifications = 'ESX'
         exports['wix_core']:Debug('INFO', 'Auto-detected ESX notifications')
+    elseif GetResourceState('qbx_core') == 'started' then
+        Notifications = 'QBX'
+        exports['wix_core']:Debug('INFO', 'Auto-detected QBX notifications')
     elseif GetResourceState('qb-core') == 'started' then
         Notifications = 'QB'
         exports['wix_core']:Debug('INFO', 'Auto-detected QB notifications')
