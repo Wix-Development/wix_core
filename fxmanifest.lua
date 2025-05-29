@@ -16,6 +16,7 @@ lua54 'on'
 shared_script 'config.lua'
 shared_script 'shared/debug.lua'
 shared_script 'shared/auto-detection.lua'
+shared_script 'shared/config-warnings.lua'
 
 client_script 'client/*.lua'
 server_script 'server/*.lua'
