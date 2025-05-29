@@ -14,6 +14,7 @@ Config.UpdateChecker = true -- Enable or disable automatic version checking on r
 ---------------- DEBUG OPTIONS ----------------
 Config.Debug = {
     ['ERROR'] = true,    -- Enable or disable the logging of error messages
+    ['WARNING'] = true, -- Enable or disable the logging of warning messages
     ['INFO'] = true,     -- Enable or disable the logging of information messages
     ['EXPORTS'] = false, -- Enable or disable the logging of export function calls
     ['RESOURCES'] = false -- Enable or disable the logging of resource events

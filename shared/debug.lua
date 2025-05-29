@@ -1,6 +1,7 @@
 function Debug(type, message)
     local validTypes = {
         ['ERROR'] = true,
+        ['WARNING'] = true,
         ['INFO'] = true,
         ['EXPORTS'] = true,
         ['RESOURCES'] = true
@@ -15,9 +16,10 @@ function Debug(type, message)
 
     local colors = {
         ['ERROR'] = '^1',
+        ['WARNING'] = '^3',
         ['INFO'] = '^4',
-        ['EXPORTS'] = '^3',
-        ['RESOURCES'] = '^3'
+        ['EXPORTS'] = '^5',
+        ['RESOURCES'] = '^5'
     }
 
     local color = colors[type] or '^7'
