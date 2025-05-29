@@ -74,7 +74,7 @@ exports['wix_core']:UpdateChecker(GetResourceMetadata(GetCurrentResourceName(), 
 exports['wix_core']:AddItem(playerId, item, amount)
 exports['wix_core']:RemoveItem(playerId, item, amount)
 exports['wix_core']:CanCarryItem(playerId, item, amount)
-exports['wix_core']:RegisterUesableItem(item, callback)
+exports['wix_core']:RegisterUseableItem(item, callback)
 exports['wix_core']:Ban(playerId, reason)
 exports['wix_core']:AddMoney(playerId, account, amount)
 exports['wix_core']:RemoveMoney(playerId, account, amount)
