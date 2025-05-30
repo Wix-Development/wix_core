@@ -24,15 +24,18 @@ shared_script '@ox_lib/init.lua' -- Can be removed if not using ox_lib notificat
 
 exports {
     'Notify',
-    'UpdateChecker',
-    'Debug',
+    'Debug'
+}
+
+server_export {
     'AddItem',
     'RemoveItem',
-    'RegisterUsableItem',
+    'RegisterUseableItem',
     'CanCarryItem',
     'Ban',
     'AddMoney',
     'RemoveMoney',
     'GetMoney',
+    'UpdateChecker',
     'SetMoney'
 }
