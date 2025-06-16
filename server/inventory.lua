@@ -63,5 +63,5 @@ end
 
 exports('AddItem', AddItem)
 exports('RemoveItem', RemoveItem)
-exports('RegisterUseableItem', RegisterUsableItem)
+exports('RegisterUseableItem', RegisterUseableItem)
 exports('CanCarryItem', CanCarryItem)
