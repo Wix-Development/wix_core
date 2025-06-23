@@ -41,7 +41,7 @@ Config.Inventory = 'auto'
 -- 'QB' - https://github.com/qbcore-framework
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
-Config.Notify = 'ESX'
+Config.Notify = 'auto'
 
 ---------------- ANTICHEAT ----------------
 -- 'WX' - https://anticheat.wx0.dev
