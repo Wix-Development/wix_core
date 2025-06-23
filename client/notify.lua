@@ -5,7 +5,7 @@ function Notify(title, message, type)
     end
     exports['wix_core']:Debug('EXPORTS', 'Sending notification - Title: '..title..' Message: '..message..' Type: '..type)
     if Notifications == 'ESX' then
-        ESX.ShowNotification(message)
+        exports['esx_notify']:Notify(type, message, 2000, title) 
     elseif Notifications == 'QB' then
         QBCore.Functions.Notify(title, type, 5000)
     elseif Notifications == 'OX' then
