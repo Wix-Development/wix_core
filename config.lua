@@ -39,10 +39,9 @@ Config.Inventory = 'auto'
 -- 'OX' - https://github.com/communityox/ox_lib
 -- 'QBX' - https://github.com/Qbox-Project/qbx_core
 -- 'QB' - https://github.com/qbcore-framework
--- 'TGIANN-LUMIHUD' - https://tgiann.tebex.io/package/6369632
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
-Config.Notify = 'auto'
+Config.Notify = 'ESX'
 
 ---------------- ANTICHEAT ----------------
 -- 'WX' - https://anticheat.wx0.dev
