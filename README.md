@@ -57,7 +57,7 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 ### Client
 
 ```lua
-exports['wix_core']:Notify('Test Title', 'This is a test message', 'success')
+exports['wix_core']:Notify(title, message, type)
 ```
 
 ### Shared
@@ -79,6 +79,7 @@ exports['wix_core']:AddMoney(playerId, account, amount)
 exports['wix_core']:RemoveMoney(playerId, account, amount)
 exports['wix_core']:GetMoney(playerId, account)
 exports['wix_core']:SetMoney(playerId, account, amount)
+exports['wix_core']:Notify(playerId, title, message, type)
 ```
 
 ## License
