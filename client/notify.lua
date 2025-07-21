@@ -1,9 +1,25 @@
 function Notify(title, message, type)
-    if not type or type == '' or type == nil then
-        type = 'info'
-        exports['wix_core']:Debug('EXPORTS', "No type specified, defaulting to 'info'.")
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: playerId is required')
+        return
     end
-    exports['wix_core']:Debug('EXPORTS', 'Sending notification - Title: '..title..' Message: '..message..' Type: '..type)
+    
+    if not title or title == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: title is required')
+        return
+    end
+    
+    if not message or message == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: message is required')
+        return
+    end
+    
+    if not type or type == '' then
+        type = 'info'
+        exports['wix_core']:Debug('EXPORTS', "Notify: No type specified, defaulting to 'info'.")
+    end
+    
+    exports['wix_core']:Debug('EXPORTS', 'Client Notify - Title: '..title..' Message: '..message..' Type: '..type)
     if Notifications == 'ESX' then
         exports['esx_notify']:Notify(type, message, 2000, title) 
     elseif Notifications == 'QB' then
@@ -48,3 +64,7 @@ function Notify(title, message, type)
 end
 
 exports('Notify', Notify)
+
+RegisterNetEvent('wix_core:notify', function(title, message, type)
+    Notify(title, message, type)
+end)
