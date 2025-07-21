@@ -45,7 +45,6 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 - **[ESX Notification](https://github.com/esx-framework)**
 - **[OX Notification](https://github.com/overextended/ox_lib)**
 - **[QB Notification](https://github.com/qbcore-framework)**
-- **[Tgiann Lumi Hud](https://tgiann.tebex.io/package/6369632)**
 - **Chat Notification** (Uses the default FiveM chat)
 - **Auto Detection** (Automatically detects the installed notification system)
 
@@ -58,7 +57,7 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 ### Client
 
 ```lua
-exports['wix_core']:Notify('Test Title', 'This is a test message', 'success')
+exports['wix_core']:Notify(title, message, type)
 ```
 
 ### Shared
@@ -80,6 +79,7 @@ exports['wix_core']:AddMoney(playerId, account, amount)
 exports['wix_core']:RemoveMoney(playerId, account, amount)
 exports['wix_core']:GetMoney(playerId, account)
 exports['wix_core']:SetMoney(playerId, account, amount)
+exports['wix_core']:Notify(playerId, title, message, type)
 ```
 
 ## License

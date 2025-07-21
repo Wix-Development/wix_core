@@ -5,6 +5,21 @@ elseif Framework == 'QB' then
 end
 
 function AddMoney(playerId, account, amount)
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'AddMoney: playerId is required')
+        return
+    end
+    
+    if not account or account == '' then
+        exports['wix_core']:Debug('ERROR', 'AddMoney: account is required')
+        return
+    end
+    
+    if not amount or amount <= 0 then
+        exports['wix_core']:Debug('ERROR', 'AddMoney: amount must be a positive number')
+        return
+    end
+    
     exports['wix_core']:Debug('EXPORTS', 'Adding '.. account..': '.. amount..' to player: '.. playerId)
     if Framework == 'ESX' then
         local xPlayer = ESX.GetPlayerFromId(playerId)
@@ -20,6 +35,21 @@ function AddMoney(playerId, account, amount)
 end
 
 function RemoveMoney(playerId, account, amount)
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'RemoveMoney: playerId is required')
+        return
+    end
+    
+    if not account or account == '' then
+        exports['wix_core']:Debug('ERROR', 'RemoveMoney: account is required')
+        return
+    end
+    
+    if not amount or amount <= 0 then
+        exports['wix_core']:Debug('ERROR', 'RemoveMoney: amount must be a positive number')
+        return
+    end
+    
     exports['wix_core']:Debug('EXPORTS', 'Removing '.. account..': '.. amount..' from player: '.. playerId)
     if Framework == 'ESX' then
         local xPlayer = ESX.GetPlayerFromId(playerId)
@@ -35,6 +65,16 @@ function RemoveMoney(playerId, account, amount)
 end
 
 function GetMoney(playerId, account)
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'GetMoney: playerId is required')
+        return 0
+    end
+    
+    if not account or account == '' then
+        exports['wix_core']:Debug('ERROR', 'GetMoney: account is required')
+        return 0
+    end
+    
     exports['wix_core']:Debug('EXPORTS', 'Getting '.. account..' from player: '.. playerId)
     if Framework == 'ESX' then
         local xPlayer = ESX.GetPlayerFromId(playerId)
@@ -50,6 +90,21 @@ function GetMoney(playerId, account)
 end
 
 function SetMoney(playerId, account, amount)
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'SetMoney: playerId is required')
+        return
+    end
+    
+    if not account or account == '' then
+        exports['wix_core']:Debug('ERROR', 'SetMoney: account is required')
+        return
+    end
+    
+    if not amount or amount < 0 then
+        exports['wix_core']:Debug('ERROR', 'SetMoney: amount must be a non-negative number')
+        return
+    end
+    
     exports['wix_core']:Debug('EXPORTS', 'Setting '.. account..': '.. amount..' to player: '.. playerId)
     if Framework == 'ESX' then
         local xPlayer = ESX.GetPlayerFromId(playerId)

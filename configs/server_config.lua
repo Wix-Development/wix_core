@@ -6,36 +6,9 @@
 --     \/  \/   |_____/_/ \_\   |_____/ \___| \_/ \___|_|\___/| .__/|_| |_| |_|\___|_| |_|\__|
 --                                                            | |                             
 --                                                            |_|                             
-author 'Wix Development'
-description 'Wix Core'
-version '1.6.2'
-fx_version('cerulean')
-game('gta5')
-lua54 'on'
 
-shared_script 'configs/shared_config.lua'
-server_script 'configs/server_config.lua'
-shared_script 'shared/debug.lua'
-shared_script 'shared/auto-detection.lua'
-
-client_script 'client/*.lua'
-server_script 'server/*.lua'
-shared_script '@ox_lib/init.lua' -- Can be removed if not using ox_lib notifications
-
-exports {
-    'Notify',
-    'Debug'
-}
-
-server_export {
-    'AddItem',
-    'RemoveItem',
-    'RegisterUseableItem',
-    'CanCarryItem',
-    'Ban',
-    'AddMoney',
-    'RemoveMoney',
-    'GetMoney',
-    'UpdateChecker',
-    'SetMoney'
-}
+---------------- ANTICHEAT ----------------
+-- 'WX' - https://anticheat.wx0.dev
+-- 'FIVEGUARD' - https://fiveguard.net
+Config.Anticheat = ''
+Config.AnticheatResourceName = '' -- The name of the anticheat resource

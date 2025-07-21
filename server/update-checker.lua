@@ -1,4 +1,9 @@
 function UpdateChecker(version)
+    if not version or version == '' then
+        exports['wix_core']:Debug('ERROR', 'UpdateChecker: version is required')
+        return nil
+    end
+    
     if Config.UpdateChecker == true then
         local resource = GetInvokingResource()
         local versionCheckUrl = "https://raw.githubusercontent.com/Wix-Development/wix_core/main/update-checker/" .. resource .. ".json"

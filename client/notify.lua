@@ -1,11 +1,27 @@
 function Notify(title, message, type)
-    if not type or type == '' or type == nil then
-        type = 'info'
-        exports['wix_core']:Debug('EXPORTS', "No type specified, defaulting to 'info'.")
+    if not playerId or playerId == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: playerId is required')
+        return
     end
-    exports['wix_core']:Debug('EXPORTS', 'Sending notification - Title: '..title..' Message: '..message..' Type: '..type)
+    
+    if not title or title == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: title is required')
+        return
+    end
+    
+    if not message or message == '' then
+        exports['wix_core']:Debug('ERROR', 'Notify: message is required')
+        return
+    end
+    
+    if not type or type == '' then
+        type = 'info'
+        exports['wix_core']:Debug('EXPORTS', "Notify: No type specified, defaulting to 'info'.")
+    end
+    
+    exports['wix_core']:Debug('EXPORTS', 'Client Notify - Title: '..title..' Message: '..message..' Type: '..type)
     if Notifications == 'ESX' then
-        ESX.ShowNotification(message)
+        exports['esx_notify']:Notify(type, message, 2000, title) 
     elseif Notifications == 'QB' then
         QBCore.Functions.Notify(title, type, 5000)
     elseif Notifications == 'OX' then
@@ -14,12 +30,6 @@ function Notify(title, message, type)
             description = message,
             type = type
         })
-    elseif Notifications == 'TGIANN-LUMIHUD' then
-        if type == 'info' then
-            exports["tgiann-lumihud"]:Notif(message, "primary", 3000)
-        else 
-            exports["tgiann-lumihud"]:Notif(message, type, 3000)
-        end
     elseif Notifications == 'CHAT' then
         if type == 'error' then
             TriggerEvent('chat:addMessage', {
@@ -54,3 +64,7 @@ function Notify(title, message, type)
 end
 
 exports('Notify', Notify)
+
+RegisterNetEvent('wix_core:notify', function(title, message, type)
+    Notify(title, message, type)
+end)
