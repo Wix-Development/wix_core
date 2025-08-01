@@ -70,11 +70,11 @@ function RegisterUseableItem(item, callback)
         return
     end
     
-    if not callback or type(callback) ~= 'function' then
-        exports['wix_core']:Debug('ERROR', 'RegisterUseableItem: callback must be a function')
+    if not callback  then
+        exports['wix_core']:Debug('ERROR', 'RegisterUseableItem: callback is required')
         return
     end
-    
+
     exports['wix_core']:Debug('EXPORTS', 'Registering usable item: ' .. item)
     if Framework == 'ESX' then
         ESX.RegisterUsableItem(item, callback)
