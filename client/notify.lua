@@ -1,9 +1,4 @@
 function Notify(title, message, type)
-    if not playerId or playerId == '' then
-        exports['wix_core']:Debug('ERROR', 'Notify: playerId is required')
-        return
-    end
-    
     if not title or title == '' then
         exports['wix_core']:Debug('ERROR', 'Notify: title is required')
         return
