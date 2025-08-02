@@ -10,5 +10,6 @@
 ---------------- ANTICHEAT ----------------
 -- 'WX' - https://anticheat.wx0.dev
 -- 'FIVEGUARD' - https://fiveguard.net
+-- 'ELECTRON' - https://electron-services.com
 Config.Anticheat = ''
 Config.AnticheatResourceName = '' -- The name of the anticheat resource

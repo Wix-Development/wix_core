@@ -14,6 +14,8 @@ function Ban(playerId, reason)
         exports[Config.AnticheatResourceName]:ban(playerId, reason)
     elseif Config.Anticheat == 'FIVEGUARD' then
         exports[Config.AnticheatResourceName]:fg_BanPlayer(playerId, reason, true)
+    elseif Config.Anticheat == 'ELECTRON' then
+        exports["Config.AnticheatResourceName"]:banPlayer(playerId, reason, 'wix_core', true)
     else
         exports['wix_core']:Debug('ERROR', 'Anticheat system not configured correctly.')
     end

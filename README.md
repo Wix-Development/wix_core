@@ -51,6 +51,7 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 ### Anicheats
 - **[WX Anticheat](https://anticheat.wx0.dev)**
 - **[Fiveguard](https://fiveguard.net)**
+- **[Electron](https://electron-services.com)**
 
 ## Usage
 
