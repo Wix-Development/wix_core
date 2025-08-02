@@ -8,7 +8,7 @@
 --                                                            |_|                             
 author 'Wix Development'
 description 'Wix Core'
-version '1.7.2'
+version '1.8.2'
 fx_version('cerulean')
 game('gta5')
 lua54 'on'
