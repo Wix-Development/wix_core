@@ -10,10 +10,6 @@
   - [Inventory Systems](#inventory-systems)
   - [Notification Systems](#notification-systems)
   - [Anticheats](#anticheats)
-- [Usage](#usage)
-  - [Client](#client)
-  - [Shared](#shared)
-  - [Server](#server)
 - [License](#license)
 
 ## Installation
@@ -45,39 +41,9 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 - **Chat Notification** (Uses the default FiveM chat)
 - **Auto Detection** (Automatically detects the installed notification system)
 
-### Anicheats
+### Anticheats
 - **[WX Anticheat](https://anticheat.wx0.dev)**
 - **[Fiveguard](https://fiveguard.net)**
-
-## Usage
-
-### Client
-
-```lua
-exports['wix_core']:Notify(title, message, type)
-```
-
-### Shared
-
-```lua
-exports['wix_core']:Debug('ERROR/INFO/EXPORTS/RESOURCES', 'Problem found.')
-```
-
-### Server
-
-```lua
-exports['wix_core']:UpdateChecker(GetResourceMetadata(GetCurrentResourceName(), 'version', 0))
-exports['wix_core']:AddItem(playerId, item, amount)
-exports['wix_core']:RemoveItem(playerId, item, amount)
-exports['wix_core']:CanCarryItem(playerId, item, amount)
-exports['wix_core']:RegisterUseableItem(item, callback)
-exports['wix_core']:Ban(playerId, reason)
-exports['wix_core']:AddMoney(playerId, account, amount)
-exports['wix_core']:RemoveMoney(playerId, account, amount)
-exports['wix_core']:GetMoney(playerId, account)
-exports['wix_core']:SetMoney(playerId, account, amount)
-exports['wix_core']:Notify(playerId, title, message, type)
-```
 
 ## License
 - This project is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for details.
