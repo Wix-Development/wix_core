@@ -24,7 +24,8 @@ shared_script '@ox_lib/init.lua' -- Can be removed if not using ox_lib notificat
 
 exports {
     'Notify',
-    'Debug'
+    'Debug',
+    'Fetch'
 }
 
 server_export {
