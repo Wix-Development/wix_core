@@ -42,9 +42,11 @@ The `wix_core` script is designed to support multiple frameworks, inventory syst
 - **Auto Detection** (Automatically detects the installed inventory system)
 
 ### Notification Systems
-- **[ESX Notification](https://github.com/esx-framework)**
-- **[OX Notification](https://github.com/overextended/ox_lib)**
-- **[QB Notification](https://github.com/qbcore-framework)**
+- **[ESX Notifications](https://github.com/esx-framework)**
+- **[OX Notifications](https://github.com/overextended/ox_lib)**
+- **[QB Notifications](https://github.com/qbcore-framework)**
+- **[QBX Notifications](https://github.com/Qbox-Project/qbx_core)**
+- **[OKOK Notifications](https://okok.tebex.io/package/4724993)**
 - **Chat Notification** (Uses the default FiveM chat)
 - **Auto Detection** (Automatically detects the installed notification system)
 

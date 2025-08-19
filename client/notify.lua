@@ -16,7 +16,7 @@ function Notify(title, message, type)
     
     exports['wix_core']:Debug('EXPORTS', 'Client Notify - Title: '..title..' Message: '..message..' Type: '..type)
     if Notifications == 'ESX' then
-        exports['esx_notify']:Notify(type, message, 2000, title) 
+        exports['esx_notify']:Notify(type, message, 5000, title) 
     elseif Notifications == 'QB' then
         QBCore.Functions.Notify(title, type, 5000)
     elseif Notifications == 'OX' then
@@ -25,6 +25,8 @@ function Notify(title, message, type)
             description = message,
             type = type
         })
+    elseif Notifications == 'OKOK' then
+        exports['okokNotify']:Alert(title, message, 5000, type, true)
     elseif Notifications == 'CHAT' then
         if type == 'error' then
             TriggerEvent('chat:addMessage', {

@@ -39,6 +39,7 @@ Config.Inventory = 'auto'
 -- 'OX' - https://github.com/communityox/ox_lib
 -- 'QBX' - https://github.com/Qbox-Project/qbx_core
 -- 'QB' - https://github.com/qbcore-framework
+-- 'OKOK' - https://okok.tebex.io/package/4724993
 -- 'CHAT' - Uses the default FiveM chat
 -- 'auto' - Automatically detects the installed notification system
 Config.Notify = 'auto'
