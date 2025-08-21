@@ -1,5 +1,5 @@
 # WIX CORE
-![banner_small](https://github.com/user-attachments/assets/b7ac06ab-aee0-41ea-b7c0-d0b3c2cc18b2)
+<img width="1000" height="500" alt="thumbnail" src="https://github.com/user-attachments/assets/2d1ccac0-3800-420c-8dc7-94e483ff7a90" />
 
 *Core script made for our resources.*
 
