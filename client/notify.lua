@@ -28,31 +28,17 @@ function Notify(title, message, type)
     elseif Notifications == 'OKOK' then
         exports['okokNotify']:Alert(title, message, 5000, type, true)
     elseif Notifications == 'CHAT' then
-        if type == 'error' then
-            TriggerEvent('chat:addMessage', {
-                color = { 255, 0, 0},
-                multiline = true,
-                args = {title, message}
-              })
-        elseif type == 'success' then
-            TriggerEvent('chat:addMessage', {
-                color = { 0, 255, 0},
-                multiline = true,
-                args = {title, message}
-              })
-        elseif type == 'info' then
-            TriggerEvent('chat:addMessage', {
-                color = { 0, 0, 255},
-                multiline = true,
-                args = {title, message}
-              })
-        else
-            TriggerEvent('chat:addMessage', {
-                color = { 255, 255, 255},
-                multiline = true,
-                args = {title, message}
-              })
-        end
+        local colors = {
+            error = {255, 0, 0},
+            success = {0, 255, 0},
+            info = {0, 0, 255}
+        }
+
+        TriggerEvent('chat:addMessage', {
+            color = colors[type] or {255, 255, 255},
+            multiline = true,
+            args = {title, message}
+        })
     elseif Notifications == 'QBX' then
         exports.qbx_core:Notify(message, type)
     else
