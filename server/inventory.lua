@@ -70,7 +70,7 @@ function RegisterUseableItem(item, callback)
         return
     end
     
-    if not callback  then
+    if not callback then
         exports['wix_core']:Debug('ERROR', 'RegisterUseableItem: callback is required')
         return
     end
